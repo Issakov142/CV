@@ -2,23 +2,26 @@ import React from 'react';
 import photo from '../../../assets/images/photo.jpg';
 import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/FlexWrapper';
+import { Container } from '../../../components/Container';
 
 export const Main = () => {
   return (
     <StyledMain>
-      <FlexWrapper align={'center'} justify={'space-around'}>
-        <div>
-          <span>Hi There</span>
-          <Name>I am Svetlana Dyablo</Name>
-          <MainTitle>A Web Developer.</MainTitle>
-        </div>
-        <Photo src={photo} alt="" />
-      </FlexWrapper>
+      <Container>
+        <FlexWrapper align={'center'} justify={'space-around'}>
+          <div>
+            <span>Hi There</span>
+            <Name>I am Svetlana Dyablo</Name>
+            <MainTitle>A Web Developer.</MainTitle>
+          </div>
+          <Photo src={photo} alt="" />
+        </FlexWrapper>
+      </Container>
     </StyledMain>
   );
 };
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
   min-height: 100vh;
   background-color: #16538f;
 `;
