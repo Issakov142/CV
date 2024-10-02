@@ -24,7 +24,9 @@ body {
 }
 
 a {
-text-decoration: unset;}
+text-decoration: unset;
+color: ${theme.colors.font};
+}
 
 ul {
 list-style: none;}
@@ -43,5 +45,17 @@ background-color: ${theme.colors.primaryBg};
 }
 section:nth-of-type(even) {
 background-color: ${theme.colors.secondaryBg};
+}
+
+h3{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+}
+
+p{
+  font-weight: 400;
+  font-size: 14px;
 }
 `
