@@ -34,6 +34,8 @@ list-style: none;}
 button {
 background-color: unset;
 border: none;
+cursor: pointer;
+color: ${theme.colors.font};
 }
 
 section {
@@ -57,5 +59,7 @@ h3{
 p{
   font-weight: 400;
   font-size: 14px;
+  line-height: 1.4;
+
 }
 `
