@@ -26,6 +26,7 @@ body {
 a {
 text-decoration: unset;
 color: ${theme.colors.font};
+cursor: pointer;
 }
 
 ul {

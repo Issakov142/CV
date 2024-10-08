@@ -63,7 +63,7 @@ const SocialIconLink = styled.a`
   justify-content: center;
   align-items: center;
   color: ${theme.colors.accent};
-  cursor: pointer;
+  /* cursor: pointer; */
 
   &:hover {
     background-color: ${theme.colors.accent};
