@@ -5,8 +5,8 @@ type FontPropsType = {
     weight?: number;
     color?: string;
     lineHeight?: number;
-    Fmin: number;
-    Fmax: number;
+    Fmin?: number;
+    Fmax?: number;
 }
 
 
