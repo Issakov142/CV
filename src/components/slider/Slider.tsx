@@ -1,65 +1,73 @@
 import React from 'react';
-import styled from 'styled-components';
-import { FlexWrapper } from '../FlexWrapper';
-import { theme } from '../../styles/Theme';
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
+import { S } from './Slider_Styles';
+import '../../styles/slider.css';
 
-export const Slider = () => {
+type SlidePropsType = {
+  text: string;
+  userName: string;
+};
+
+const Slide = (props: SlidePropsType) => {
   return (
-    <StyledSlider>
-      <FlexWrapper>
-        <Slide>
-          <Text>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit.
-          </Text>
-          <Name>@ivan ivanow</Name>
-        </Slide>
-      </FlexWrapper>
-      <Pagination>
-        <span></span>
-        <span className={'active'}></span>
-        <span></span>
-      </Pagination>
-    </StyledSlider>
+    <S.Slide>
+      <S.Text>{props.text}</S.Text>
+      <S.Name>@{props.userName}</S.Name>
+    </S.Slide>
   );
 };
 
-const StyledSlider = styled.div`
-  border: 1px solid red;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-const Slide = styled.div`
-  text-align: center;
-`;
-const Text = styled.p``;
-const Name = styled.span`
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin: 22px 0 32px;
-  display: inline-block;
-`;
-const Pagination = styled.div`
-  span {
-    display: inline-block;
-
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    width: 7px;
-    height: 7px;
-    & + span {
-      margin-left: 5px;
+const items = [
+  <Slide
+    userName={'ivan ivanow'}
+    text={
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
     }
-
-    &.active {
-      width: 20px;
-      background-color: ${theme.colors.accent};
+  />,
+  <Slide
+    userName={'john doe'}
+    text={
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
     }
-  }
-`;
+  />,
+  <Slide
+    userName={'peatisfilum saflora'}
+    text={
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+    }
+  />,
+];
+
+export const Slider = () => (
+  <S.Slider>
+    <AliceCarousel mouseTracking disableButtonsControls items={items} />
+  </S.Slider>
+);
+
+// import React from 'react';
+// import styled from 'styled-components';
+// import { FlexWrapper } from '../FlexWrapper';
+// import { theme } from '../../styles/Theme';
+
+// export const Slider = () => {
+//   return (
+//     <StyledSlider>
+//       <FlexWrapper>
+// <Slide>
+//   <Text>
+//     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+//     incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet,
+//     consectetur adipisicing elit.
+//   </Text>
+//   <Name>@ivan ivanow</Name>
+// </Slide>
+//       </FlexWrapper>
+//       <Pagination>
+//         <span></span>
+//         <span className={'active'}></span>
+//         <span></span>
+//       </Pagination>
+//     </StyledSlider>
+//   );
+// };
