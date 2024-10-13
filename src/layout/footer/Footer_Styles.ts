@@ -3,7 +3,7 @@ import { theme } from "../../styles/Theme";
 import { font } from "../../styles/Common";
 
 const Footer = styled.footer`
-position: relative;
+  position: relative;
   background-color: ${theme.colors.primaryBg};
   padding: 40px 0;
 `;
@@ -31,7 +31,7 @@ const SocialIconLink = styled.a`
 
   &:hover {
     background-color: ${theme.colors.accent};
-    color: ${theme.colors.primaryBg};
+    color: ${theme.colors.font};
 
     transform: translateY(-4px);
   }
