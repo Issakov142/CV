@@ -1,15 +1,12 @@
 import styled, { css } from "styled-components";
 import { theme } from "../../../styles/Theme";
+import { Link } from "react-scroll";
+
 //menu
-const Link = styled.a`
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-  font-size: 30px;
 
-  text-align: center;
-  color: transparent;
+const MenuItem = styled.li`
+  position: relative;
 `;
-
 const Mask = styled.span`
   position: absolute;
   top: 0;
@@ -29,8 +26,15 @@ const Mask = styled.span`
   }
 `;
 
-const MenuItem = styled.li`
-  position: relative;
+
+const NavLink = styled(Link)`
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+
+  text-align: center;
+  color: transparent;
+
 
   &::before {
     content: '';
@@ -45,7 +49,7 @@ const MenuItem = styled.li`
     z-index: 1;
     transform: scale(0);
   }
-  &:hover {
+  &:hover, &.active {
     &::before {
       transform: scale(1);
     }
@@ -58,6 +62,8 @@ const MenuItem = styled.li`
     }
   }
 `;
+
+
 
 //mobile menu styles
 
@@ -157,7 +163,7 @@ const DesktopMenu = styled.nav`
 `;
 
 export const S = {
-    Link,
+    NavLink,
     MenuItem,
     Mask,
     MobileMenu,
