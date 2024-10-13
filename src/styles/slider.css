@@ -17,9 +17,9 @@ margin-right: 5px;
 }
 
 .alice-carousel__dots-item:not(.__custom):hover {
-    background-color: #7572D5;
+    background-color: #7b8fbd;
 }
 .alice-carousel__dots-item:not(.__custom).__active {
     width: 20px;
-    background-color: #7572D5;
+    background-color: #7b8fbd;
 }

@@ -23,7 +23,7 @@ export const Footer = () => {
   return (
     <S.Footer>
       <FlexWrapper direction={'column'} align={'center'}>
-        <S.Name>Svetlana</S.Name>
+        <S.Name>Issakov</S.Name>
         <S.SocialsList>
           {SocialItemsData.map((sid, index) => {
             return (
@@ -35,7 +35,7 @@ export const Footer = () => {
             );
           })}
         </S.SocialsList>
-        <S.Copyright>© 2024 Svetlana Dyablo, All Rights Reserved.</S.Copyright>
+        <S.Copyright>© 2024 Oleg Issakov, All Rights Reserved.</S.Copyright>
       </FlexWrapper>
     </S.Footer>
   );

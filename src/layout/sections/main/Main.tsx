@@ -1,5 +1,5 @@
 import React from 'react';
-import photo from '../../../assets/images/photo.jpg';
+import photo from '../../../assets/images/photo1.webp';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Container } from '../../../components/Container';
 import { S } from './Main_Styles';
@@ -14,7 +14,7 @@ export const Main: React.FC = () => {
           <div>
             <S.SmallText>Hi There</S.SmallText>
             <S.Name>
-              I am <span>Svetlana Dyablo</span>
+              I am <span>Issakov Oleg</span>
             </S.Name>
             {/* <S.MainTitle>A Web Developer.</S.MainTitle> */}
             <S.MainTitle>
@@ -35,7 +35,7 @@ export const Main: React.FC = () => {
             glareMaxOpacity={0.45}
             scale={1.02}>
             <S.PhotoWrapper>
-              <S.Photo src={photo} alt="" />
+              <S.Photo src={photo} alt="image of developer" />
             </S.PhotoWrapper>
           </Tilt>
         </FlexWrapper>
