@@ -25,20 +25,20 @@ const Name = styled.span`
 `;
 const Pagination = styled.div`
   span {
-    display: inline-block;
+    /* display: inline-block;
 
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     width: 7px;
-    height: 7px;
-    & + span {
+    height: 7px; */
+    /* & + span {
       margin-left: 5px;
-    }
+    } */
 
-    &.active {
+    /* &.active {
       width: 20px;
       background-color: ${theme.colors.accent};
-    }
+    } */
   }
 `;
 
