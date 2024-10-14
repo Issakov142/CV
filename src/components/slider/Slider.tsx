@@ -41,7 +41,14 @@ const items = [
 
 export const Slider = () => (
   <S.Slider>
-    <AliceCarousel mouseTracking disableButtonsControls items={items} />
+    <AliceCarousel
+      autoPlay
+      autoPlayInterval={2000}
+      infinite
+      mouseTracking
+      disableButtonsControls
+      items={items}
+    />
   </S.Slider>
 );
 

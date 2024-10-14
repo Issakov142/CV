@@ -14,8 +14,8 @@ position: relative;
 const Work = styled.div`
   background-color: ${theme.colors.secondaryBg};
   /* max-width: 540px; */
-  width: 330px;
-  flex-grow: 1;
+  /* width: 330px;
+  flex-grow: 1; */
   ${Link} {
     padding: 10px 0;
     & + ${Link} {
@@ -23,9 +23,9 @@ const Work = styled.div`
     }
   }
 
-  @media ${theme.media.desktop} {
+  /* @media ${theme.media.desktop} {
     max-width: 540px;
-  }
+  } */
 `;
 
 const ImageWrapper = styled.div`
