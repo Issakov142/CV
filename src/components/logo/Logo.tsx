@@ -8,7 +8,7 @@ export const Logo = () => {
       onClick={() => {
         scroll.scrollToTop();
       }}>
-      <Icon iconId={'code'} />
+      <Icon iconId={'react'} />
     </button>
   );
 };
