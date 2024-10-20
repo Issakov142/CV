@@ -8,7 +8,7 @@ export const Logo = () => {
       onClick={() => {
         scroll.scrollToTop();
       }}>
-      <Icon iconId={'typescript'} />
+      <Icon iconId={'figma'} />
     </button>
   );
 };
