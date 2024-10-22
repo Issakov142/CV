@@ -8,7 +8,7 @@ export const Logo = () => {
       onClick={() => {
         scroll.scrollToTop();
       }}>
-      <Icon iconId={'styled-component'} />
+      <Icon iconId={'typescript'} />
     </button>
   );
 };
